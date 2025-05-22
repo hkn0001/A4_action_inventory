@@ -1,0 +1,5 @@
+# main_item_id|alias1,alias2,alias3
+
+teacake|cake,small cake,teacake
+drink|drink,bottle,bottle labeled drink me
+cloak|cloak,invisibility cloak

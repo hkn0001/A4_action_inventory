@@ -1,0 +1,4 @@
+for the txt file that controls rooms, this is the expected format: 
+	id|description|exit_command=destination,exit_command=destination,...
+
+

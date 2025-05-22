@@ -1,0 +1,5 @@
+# main_character_id|alias1,alias2,alias3
+
+cheshire_cat|cat,cheshire,cheshire cat
+dormouse|mouse,dormouse,sleepy mouse
+mad_hatter|hatter,mad hatter

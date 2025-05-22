@@ -1,0 +1,11 @@
+#include "control.h"
+#include "game.h"
+#include "location.h"
+#include "characters.h"
+#include "player.h"
+#include "item.h"
+#include <iostream>
+#include <fstream>
+#include <sstream>
+#include <algorithm>
+#include <cstdlib>

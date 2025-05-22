@@ -1,0 +1,4 @@
+rock|A heavy rock.|meadow|5|0|
+cake|A small cake.|hallway|0|10|big
+drink|A bottle labeled 'Drink Me'.|hallway|0|0|small
+cat meat|cat meat - disgusting but possibly necessary. | |0|10|
