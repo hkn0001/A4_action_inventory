@@ -14,5 +14,5 @@ void cool_text(const std::string& text) {
 
 
 int main() {
-    cool_text("I am beginning to learn ruby and was following the instructions of one video to access the desktop through the -ls command in the terminal. Now, I would like to get out of the desktop in the terminal and don't know how. I know, I know I am a total noob... but can someone please help. Thanks. BTW the command I wrote was:");
+    cool_text("blah blah blah :??LIFds;ljs ;alsdkfghawo;rljgvhasfdl;kfjdsalkfjsda;lkfjdsalfjsdalkfjlasdjflsdj a");
 }

@@ -4,6 +4,7 @@
 #include "characters.h"
 #include "player.h"
 #include "item.h"
+#include "action.h"
 #include <iostream>
 #include <fstream>
 #include <sstream>
@@ -16,12 +17,17 @@ game::game() : is_running(true) {
     character_manager = new character(); 
     room_manager = new room();
     room_manager->game_manager = this;
+    action_manager = new action(this);
     control_manager = new control(this);
+    action* action_manager;
+
+
 
     room_manager->character_manager = character_manager;
     room_manager->item_manager = item_manager;
     room_manager->player_data = player_data;
     room_manager->game_manager = this;
+    
 
 }
 

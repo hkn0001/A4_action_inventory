@@ -12,19 +12,19 @@ class control;
 class room;
 class character;
 class item;
+class action;
 
 class game {
 private: 
-    
     std::vector<std::string> required_treasures = {"crown", "scepter", "cloak"};
     void handle_combat(character& enemy, const std::string& enemy_id, int damage_dealt);
-
 public:
     player* player_data;
    room* room_manager; 
    control* control_manager;
    item* item_manager;
    character* character_manager;
+   action* action_manager;
    bool is_running;
     std::string resolve_item_id(const std::string& user_input);
     std::string resolve_character_id(const std::string& user_input);

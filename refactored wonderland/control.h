@@ -13,6 +13,7 @@ class character;
 class room;
 class game;
 class item;
+class action;
 
 
 class control {
@@ -30,6 +31,7 @@ public:
     room* room_manager; 
     item* item_manager;
     character* character_manager;
+    action* action_manager;
 
 void process_command(const std::string& input);
 std::string normalize_input(const std::string& raw);
