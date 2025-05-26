@@ -47,7 +47,7 @@ void control::process_command(const std::string& input) {
         return;
     }
 
-// INVENTORY
+
 if (cleaned_input == "inventory" || cleaned_input == "i" || cleaned_input == "invent") {
     const auto& inv = player_data->get_inventory();
     if (inv.empty()) {
@@ -61,15 +61,21 @@ if (cleaned_input == "inventory" || cleaned_input == "i" || cleaned_input == "in
     return;
 }
 
-// ACTION DISPATCH
-if (cleaned_input.rfind("take ",0) == 0)      { action_manager->take(cleaned_input.substr(5));       return; }
-if (cleaned_input.rfind("use ",0) == 0)       { action_manager->use(cleaned_input.substr(4));        return; }
-if (cleaned_input.rfind("drop ",0) == 0)      { action_manager->drop(cleaned_input.substr(5));       return; }
-if (cleaned_input.rfind("store ",0) == 0)     { action_manager->store(cleaned_input.substr(6));      return; }
-if (cleaned_input.rfind("retrieve ",0) == 0)  { action_manager->retrieve(cleaned_input.substr(9));   return; }
-if (cleaned_input.rfind("attack ",0) == 0)    { action_manager->attack(cleaned_input.substr(7));     return; }
-if (cleaned_input.rfind("talk",0) == 0)       { action_manager->talk(input);                         return; }
-if (cleaned_input.rfind("throw ",0) == 0)     { action_manager->throw_item(cleaned_input);           return; }
+size_t space_pos = cleaned_input.find(' ');
+std::string verb = (space_pos != std::string::npos) ? cleaned_input.substr(0, space_pos) : cleaned_input;
+std::string param = (space_pos != std::string::npos) ? cleaned_input.substr(space_pos + 1) : "";
+
+std::string action_id = action_manager->resolve_action_id(verb);
+
+if (action_id == "attack")   { action_manager->attack(param);   return; }
+if (action_id == "take")     { action_manager->take(param);     return; }
+if (action_id == "drop")     { action_manager->drop(param);     return; }
+if (action_id == "use")      { action_manager->use(param);      return; }
+if (action_id == "store")    { action_manager->store(param);    return; }
+if (action_id == "retrieve") { action_manager->retrieve(param); return; }
+if (action_id == "talk")     { action_manager->talk(input);     return; }
+if (action_id == "throw")    { action_manager->throw_item(input); return; }
+
 
 
     std::string cmd = normalize_direction(cleaned_input);

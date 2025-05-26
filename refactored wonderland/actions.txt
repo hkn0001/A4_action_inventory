@@ -1,0 +1,8 @@
+attack|a,attack!
+take|grab,pick,pick up
+drop|leave
+use|consume,eat
+store|stash
+retrieve|get,take from chest
+talk|speak,chat
+throw|hurl,fling

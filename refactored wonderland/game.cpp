@@ -44,6 +44,7 @@ void game::setup() {
     load_item_aliases("item_aliases.txt");
     load_character_aliases("character_aliases.txt");
     load_required_treasures("required_treasures.txt");
+    action_manager->load_actions("actions.txt");
 }
 
 void game::run() {

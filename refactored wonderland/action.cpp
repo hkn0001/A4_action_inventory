@@ -6,6 +6,8 @@
 #include "location.h"
 #include <algorithm>
 #include <iostream>
+#include <fstream>
+#include <sstream>
 
 action::action(game* g) {
     game_manager = g;
@@ -14,6 +16,7 @@ action::action(game* g) {
     character_manager = g->character_manager;
     room_manager = g->room_manager;
 }
+
 
 
 void action::take(const std::string& raw) {
@@ -246,4 +249,47 @@ void action::throw_item(const std::string& raw) {
         std::cout << "You have been defeated...\n";
         game_manager->is_running = false;
     }
+}
+
+void action::load_actions(const std::string& filename) {
+    std::ifstream file(filename);
+    if (!file.is_open()) {
+        std::cerr << "Could not open action file.\n";
+        return;
+    }
+
+    std::string line;
+    while (std::getline(file, line)) {
+        if (line.empty() || line[0] == '#') continue;
+
+        std::istringstream line_stream(line);
+        std::string id, aliases_str;
+
+        std::getline(line_stream, id, '|');
+        std::getline(line_stream, aliases_str);
+
+        std::transform(id.begin(), id.end(), id.begin(), ::tolower);
+        action_alias_map[id] = id;
+
+        std::istringstream alias_stream(aliases_str);
+        std::string alias;
+        while (std::getline(alias_stream, alias, ',')) {
+            alias.erase(std::remove_if(alias.begin(), alias.end(), ::isspace), alias.end());
+            std::transform(alias.begin(), alias.end(), alias.begin(), ::tolower);
+            if (!alias.empty()) {
+                action_alias_map[alias] = id;
+            }
+        }
+    }
+}
+
+std::string action::resolve_action_id(const std::string& user_input) {
+    std::string cleaned = user_input;
+    std::transform(cleaned.begin(), cleaned.end(), cleaned.begin(), ::tolower);
+    cleaned.erase(std::remove_if(cleaned.begin(), cleaned.end(), ::ispunct), cleaned.end());
+
+    if (action_alias_map.count(cleaned)) {
+        return action_alias_map[cleaned];
+    }
+    return "";
 }
