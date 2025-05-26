@@ -16,8 +16,6 @@ action::action(game* g) {
 }
 
 
-// ──────── take ────────
-// from control.cpp “take ” block
 void action::take(const std::string& raw) {
     std::string item_id = game_manager->resolve_item_id(raw);
     if (item_id.empty()) {
@@ -36,8 +34,6 @@ void action::take(const std::string& raw) {
     }
 }
 
-// ──────── use ────────
-// from control.cpp “use ” block
 void action::use(const std::string& raw) {
     std::string item_id = game_manager->resolve_item_id(raw);
     if (! player_data->has_item(item_id)) {
@@ -59,8 +55,6 @@ void action::use(const std::string& raw) {
     std::cout << "You used the " << item_id << ".\n";
 }
 
-// ──────── drop ────────
-// from control.cpp “drop ” block
 void action::drop(const std::string& raw) {
     std::string item_id = game_manager->resolve_item_id(raw);
     if (! player_data->has_item(item_id)) {
@@ -72,8 +66,6 @@ void action::drop(const std::string& raw) {
     std::cout << "You dropped the " << item_id << ".\n";
 }
 
-// ──────── store ────────
-// from control.cpp “store ” block
 void action::store(const std::string& raw) {
     std::string item_id = game_manager->resolve_item_id(raw);
     if (! player_data->has_item(item_id)) {
@@ -90,8 +82,6 @@ void action::store(const std::string& raw) {
     std::cout << "You stored the " << item_id << " in the chest.\n";
 }
 
-// ───── retrieve ───────
-// from control.cpp “retrieve ” block
 void action::retrieve(const std::string& raw) {
     std::string item_id = game_manager->resolve_item_id(raw);
     auto& chest = room_manager->chests[room_manager->current_room];
@@ -105,8 +95,6 @@ void action::retrieve(const std::string& raw) {
     std::cout << "You retrieved the " << item_id << " from the chest.\n";
 }
 
-// ─────── attack ────────
-// from control.cpp “attack ” block
 void action::attack(const std::string& raw) {
     std::string target_id = game_manager->resolve_character_id(raw);
     if (target_id == "") {
@@ -147,8 +135,6 @@ void action::attack(const std::string& raw) {
     }
 }
 
-// ──────── talk ────────
-// from control.cpp “talk” block
 void action::talk(const std::string& raw_input) {
     std::string target_raw = raw_input;
     if (target_raw.substr(0,7) == "talk to") {
@@ -201,8 +187,6 @@ void action::talk(const std::string& raw_input) {
     }
 }
 
-// ───── throw_item ─────
-// from control.cpp “throw ” block
 void action::throw_item(const std::string& raw) {
     size_t at_pos = raw.find(" at ");
     if (at_pos == std::string::npos) {

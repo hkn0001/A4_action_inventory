@@ -421,13 +421,13 @@ void game::show_status() {
     int hp_blocks = hp * 20 / max_hp;
     int hunger_blocks = hunger * 20 / max_hunger;
 
-    std::cout << "HEALTH: [";
+    std::cout << "                                                                      HEALTH: [";
     for (int i = 0; i < 20; ++i) std::cout << (i < hp_blocks ? "\u2588" : " ");
     std::cout << "] " << hp << "/" << max_hp << "\n";
 
-    std::cout << "HUNGER: [";
+    std::cout << "                                                                      HUNGER: [";
     for (int i = 0; i < 20; ++i) std::cout << (i < hunger_blocks ? "\u2588" : " ");
     std::cout << "] " << hunger << "/" << max_hunger << "\n";
 
-    std::cout << "SIZE: " << size << "\n\n";
+    std::cout << "                                                                      SIZE: " << size << "\n\n";
 }

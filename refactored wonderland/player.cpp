@@ -4,13 +4,20 @@
 #include "characters.h"
 #include "player.h"
 #include "item.h"
+#include "inventory.h"
+
 #include <iostream>
 #include <fstream>
 #include <sstream>
 #include <algorithm>
 #include <cstdlib>
 
-player::player() : size("normal"), hunger(100), health(100), base_damage(7) {}
+player::player()
+    : player_inventory(new inventory()), size("normal"), hunger(100), health(100), base_damage(7) {}
+
+player::~player() {
+    delete player_inventory;
+}
 
 int player::get_health() const {
     return health;
@@ -35,22 +42,20 @@ void player::set_base_damage(int damage) {
 }
 
 void player::add_item(const std::string& item_id) {
-    inventory.push_back(item_id);
+    player_inventory->add_item(item_id);
 }
 
 bool player::has_item(const std::string& item_id) const {
-    return std::find(inventory.begin(), inventory.end(), item_id) != inventory.end();
+    return player_inventory->has_item(item_id);
 }
 
 void player::remove_item(const std::string& item_id) {
-    auto it = std::remove(inventory.begin(), inventory.end(), item_id);
-    if (it != inventory.end()) {
-        inventory.erase(it, inventory.end());
-    }
+    player_inventory->remove_item(item_id);
 }
 
+
 const std::vector<std::string>& player::get_inventory() const {
-    return inventory;
+    return player_inventory->get_items();
 }
 
 void player::set_size(const std::string& new_size) {
