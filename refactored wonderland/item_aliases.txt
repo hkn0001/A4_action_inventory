@@ -1,5 +1,15 @@
-# main_item_id|alias1,alias2,alias3
-
-teacake|cake,small cake,teacake
-drink|drink,bottle,bottle labeled drink me
-cloak|cloak,invisibility cloak
+black_diamond|black rock,cursed gem
+teacup|cup,tea
+eat_me_cake|cake,eatme,striped cake
+mushroom_piece|shroom,mushroom
+pocket_watch|watch,clock,timepiece
+rose_blade|rose,thorn,blade
+laughter_bell|bell,giggle
+playing_card|card,ace
+ink_bottle|ink,liquid,black stuff
+smoking_caterpillar_pipe|pipe,smoke
+painted_flower|flower,fake flower
+talking_fork|fork,silverware
+glass_key|key,shiny key,glass
+bottle_of_tears|tears,bottle
+white_chess_pawn|pawn,chess

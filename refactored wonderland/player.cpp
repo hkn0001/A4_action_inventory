@@ -42,8 +42,13 @@ void player::set_base_damage(int damage) {
 }
 
 void player::add_item(const std::string& item_id) {
+    if (player_inventory->get_items().size() >= player_inventory->INVENTORY_MAX_SIZE) {
+        std::cout << "You can't carry any more items (max 7).\n";
+        return;
+    }
     player_inventory->add_item(item_id);
 }
+
 
 bool player::has_item(const std::string& item_id) const {
     return player_inventory->has_item(item_id);

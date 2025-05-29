@@ -76,6 +76,7 @@ std::cout << "Explore carefully. Some rooms require specific sizes to enter.\n\n
     std::string input;
 
     if (!room_manager->visited_rooms[room_manager->current_room]) {
+        std::cout << "\n" << room_manager->rooms[room_manager->current_room].get_description() << "\n";
        room_manager->visited_rooms[room_manager->current_room] = true;
     } else {
         std::cout << "\nYou are back in the " << room_manager->current_room << ".\n";

@@ -1,5 +1,5 @@
-meadow|You're in a sunny meadow filled with wildflowers. In the distance, you spot a white rabbit dashing toward a hole.|normal|go south=rabbit_hole,go east=locked_door,go west=hallway
-rabbit_hole|You tumble down a dark hole lined with shelves and strange objects. There's no way back up.|normal|go north=chamber
+rabbit hole|You tumble down a dark hole lined with shelves and strange objects.|normal|go south=rabbit_hole,go west=hallway
+meadow|You're in a sunny meadow filled with wildflowers. In the distance, you spot a white rabbit dashing toward a hole. There's no way back up.|normal|go north=chamber,go south=rabbit_hole,go west=hallway
 hallway|A hallway full of mismatched doors, some tiny and some towering. You hear giggling nearby.|normal|go east=meadow,go south=mushroom_room,go west=tea_party
 mushroom_room|Giant mushrooms tower over you. A hookah-smoking caterpillar sits atop one.|small|go north=hallway
 tea_party|A long table stretches through a twisted garden. Teacups, crumbs, and nonsense chatter fill the air.|normal|go east=hallway

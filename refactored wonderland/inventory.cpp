@@ -14,8 +14,12 @@
 #include <algorithm>
 
 void inventory::add_item(const std::string& item_id) {
+    if (items.size() >= INVENTORY_MAX_SIZE) {
+        return;
+    }
     items.push_back(item_id);
 }
+
 
 void inventory::remove_item(const std::string& item_id) {
     auto it = std::remove(items.begin(), items.end(), item_id);

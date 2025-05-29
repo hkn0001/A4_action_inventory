@@ -1,4 +1,4 @@
-attack|a,attack!
+attack|a,attack!،strike
 take|grab,pick,pick up
 drop|leave
 use|consume,eat
