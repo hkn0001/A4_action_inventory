@@ -19,7 +19,6 @@ game::game() : is_running(true) {
     room_manager->game_manager = this;
     action_manager = new action(this);
     control_manager = new control(this);
-    action* action_manager;
 
 
 

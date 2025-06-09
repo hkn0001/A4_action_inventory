@@ -44,12 +44,18 @@ void action::use(const std::string& raw) {
         return;
     }
     const item& i = item_manager->all_items[item_id];
+    int hunger = i.get_hunger_restore();
+    bool can_consume = (hunger > 0); 
+
+    if (!can_consume) {
+        std::cout << "That item cannot be consumed.\n";
+        return;
+    }
     std::string new_size = i.get_size_change();
     if (new_size != "") {
         player_data->set_size(new_size);
         std::cout << "You feel yourself change size! You are now " << new_size << ".\n";
     }
-    int hunger = i.get_hunger_restore();
     if (hunger > 0) {
         player_data->change_hunger(hunger);
         std::cout << "You feel nourished. Hunger: " << player_data->get_hunger() << "\n";
