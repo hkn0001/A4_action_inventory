@@ -1,8 +1,9 @@
-red_queen|A terrifying monarch.|garden|30|10|crown,scepter
-cheshire_cat|A smiling cat that vanishes.|hallway|20|5|cat meat
-mad_hatter|He looks slightly mad.|tea_party|25|8|teacup
+# id|description|location|health|damage|drops|aliases|peaceful|greeting|gift
+red_queen|A terrifying monarch.|garden|30|10|crown,scepter|queen,monarch
+cheshire_cat|A smiling cat that vanishes.|hallway|20|5|cat meat|cat,cheshire
+mad_hatter|He looks slightly mad.|tea_party|12|8|teacup
 white_rabbit|A nervous rabbit glancing at a pocket watch.|white_rabbit_hole|15|0|pocket_watch
 caterpillar|A blue caterpillar perched on a mushroom, blowing smoke rings.|mushroom_grove|20|0|mushroom_piece
-queen_of_hearts|The furious Queen shouting 'Off with their heads!'.|courtroom|40|12|heart_scepter
-dormouse|A sleepy mouse curled up under a teapot.|tea_party|10|0|teacake
-jabberwock|A monstrous beast with fiery eyes and jagged wings.|dark_forest|60|15|cursed_tooth
+queen_of_hearts|The furious Queen shouting 'off with their heads!'.|courtroom|40|12|heart_scepter
+dormouse|A sleepy mouse curled up under a teapot.|tea_party|10|20|teacake|
+jabberwock|A monstrous beast with fiery eyes and jagged wings.|dark_forest|10000|10000

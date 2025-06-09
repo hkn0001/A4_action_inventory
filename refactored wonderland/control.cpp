@@ -81,20 +81,23 @@ if (action_id == "throw")    { action_manager->throw_item(input); return; }
 std::string cmd = normalize_direction(cleaned_input);
 std::string next_room = room_manager->rooms[room_manager->current_room].get_next_room(cmd);
 
-
-if (cmd != cleaned_input) {
-    if (!next_room.empty()) {
-        std::string required_size = room_manager->rooms[next_room].get_size_required();
-        if (required_size.empty() || required_size == player_data->get_size()) {
-            room_manager->current_room = next_room;
-        } else {
-            std::cout << "You can't enter this room at your current size.\n";
-        }
+if (!next_room.empty()) {
+    std::string required_size = room_manager->rooms[next_room].get_size_required();
+    if (required_size.empty() || required_size == player_data->get_size()) {
+        room_manager->current_room = next_room;
     } else {
-        std::cout << "You can't go that way.\n";
+        std::cout << "You can't enter this room at your current size.\n";
     }
 } else {
-    std::cout << "I don't understand what you are saying.\n";
+
+    if (
+        cleaned_input.substr(0, 3) == "go " ||
+        cmd != cleaned_input
+    ) {
+        std::cout << "You can't go that way.\n";
+    } else {
+        std::cout << "I don't understand what you are saying.\n";
+    }
 }
 
 

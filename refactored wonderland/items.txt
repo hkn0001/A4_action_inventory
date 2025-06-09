@@ -3,7 +3,7 @@ teacup|A floating teacup that makes you feel smaller when drunk.|tea_garden|0|0|
 eat_me_cake|A striped cake with the label "EAT ME" on it.|meadow|0|25|large|cake,eatme,striped cake
 mushroom_piece|A piece of peculiar mushroom, half red and half blue.|hedge_maze|0|15|small|shroom,mushroom
 pocket_watch|A golden pocket watch ticking erratically.|rabbit_burrow|0|0||watch,clock,timepiece
-rose_blade|A thorny rose twisted into a deadly blade.|hedge_maze|15|0||rose,thorn,blade
+rose_dagger|A thorny rose twisted into a deadly blade.|hedge_maze|15|0||rose,thorn,blade,dagger
 laughter_bell|A tiny silver bell that makes everything echo with laughter.|tea_garden|0|5||bell,giggle
 playing_card|A bloodstained playing card stiff with old paint.|chest_room|5|0||card,ace
 ink_bottle|A swirling bottle of sentient ink.|safe_room|0|10||ink,liquid,black stuff
