@@ -1,5 +1,9 @@
 # main_character_id|alias1,alias2,alias3
 
-cheshire_cat|cat,cheshire,cheshire cat
-dormouse|mouse,dormouse,sleepy mouse
-mad_hatter|hatter,mad hatter
+cheshire cat|cat,cheshire
+mad hatter|rabbit,mad rabbit,hatter,mad
+white rabbit|white,rabbit
+caterpillar|caterpilar
+queen of hearts|queen_of_hearts,queen,heart queen
+dormouse|mouse,rat 
+jabberwock|jabberwocky

@@ -193,6 +193,7 @@ void action::talk(const std::string& raw_input) {
         player_data->add_item(gift);
         std::cout << target_id << " gives you a " << gift << ".\n";
         npc.clear_gift();
+        room_chars.erase(it);
     }
 }
 

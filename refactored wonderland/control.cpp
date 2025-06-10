@@ -104,7 +104,7 @@ if (!next_room.empty()) {
     bool moved = (room_manager->current_room != previous_room);
     room_manager->print_room_state(moved);
 
-    if (room_manager->current_room == "safe_room") {
+    if (room_manager->current_room == "safe room") {
         bool has_all = true;
         for (const auto& treasure : required_treasures) {
             if (!player_data->has_item(treasure)) {

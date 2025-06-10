@@ -1,15 +1,29 @@
-black_diamond|black rock,cursed gem
+
+
+red flower|flower,crimson flower
+
+queen's card|card,playing card
+
 teacup|cup,tea
-eat_me_cake|cake,eatme,striped cake
-mushroom_piece|shroom,mushroom
-pocket_watch|watch,clock,timepiece
-rose_blade|rose,thorn,blade
-laughter_bell|bell,giggle
-playing_card|card,ace
-ink_bottle|ink,liquid,black stuff
-smoking_caterpillar_pipe|pipe,smoke
-painted_flower|flower,fake flower
-talking_fork|fork,silverware
-glass_key|key,shiny key,glass
-bottle_of_tears|tears,bottle
-white_chess_pawn|pawn,chess
+
+shrinking cake|cake,eatme,striped cake
+
+enlargement mushroom|shroom,mushroom
+
+pocket watch|watch,clock,timepiece
+
+rose dagger|rose,thorn,blade,dagger
+
+bloody card|throwing card,bloody
+
+mad hatter's hat|hat,mad hat,mad hatter's
+
+cat meat|kitten meat,cheshire meat,
+
+rabbit sandwitch|rabbit meat,rabbit food,sandwitch
+
+chess jerky|chess,chess meat
+
+mystery meat|meat,beef,mystery
+
+edible grass|grass,greenery,herb
