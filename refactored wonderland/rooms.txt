@@ -1,6 +1,6 @@
 rabbit burrow|A narrow tunnel stretches forward, its walls cluttered with crooked shelves, dusty curtains, and curious bric-a-brac that never seem to collect dust. The descent is peculiar—too steep for walking, too slow for falling—yet somehow both at once. The air smells faintly of wood polish and forgotten thoughts.||go north=hallway;
 
-meadow|A circular meadow, impossibly green and excessively floral, lies under a sky that isn’t quite visible. The flowers seem arranged by someone unfamiliar with symmetry but deeply fond of colour. Breezes pass without source, and the grass bends in patterns no wind should make. The edge of the field drops off without warning.||go north=croquet ground,go west=hallway
+meadow|A circular meadow, impossibly green and excessively floral, lies under a sky that isn’t quite visible. The flowers seem arranged by someone unfamiliar with symmetry but deeply fond of colour. Breezes pass without source, and the grass bends in patterns no wind should make. The edge of the field drops off without warning.||go north=chess room,go west=hallway
 
 hallway|A long, low hall paneled with wood the color of old toffee. Doors of various shapes - square, oval, triangular - line both sides, none quite matching the others. The ceiling slopes unevenly, and the floor is slightly too spongy to trust. A smell like burnt sugar hangs in the air, without explanation.||go east=meadow,go north=mushroom room,go west=tea party
 
@@ -8,9 +8,9 @@ mushroom|A dim clearing ringed with towering mushrooms, each shaped like an umbr
 
 tea party|A garden that twists like a badly-folded map. A long table dominates the space, unevenly set with teacups, saucers, and clocks that tick sideways. Overgrown hedges lean in close, as if eavesdropping. A faint tinkling sound drifts constantly from nowhere in particular.||go east=hallway
 
-croquet ground|A narrow chamber with curved corners and no clear origin of light. The floor is made of black-and-white tiles, though the pattern changes when you look away. A glass pedestal stands in the center, casting no shadow. The walls hum faintly, as though remembering something important.|small|go east=throne room,go south=meadow,go west=mushroom
+chess board|A narrow chamber with curved corners and no clear origin of light. The floor is made of black-and-white tiles, though the pattern changes when you look away. A glass pedestal stands in the center, casting no shadow. The walls hum faintly, as though remembering something important.|small|go east=throne room,go south=meadow,go west=mushroom
 
-throne room|A vaulted hall soaked in crimson and gold. Tapestries hang where there are no walls, and the ceiling floats slightly too high to be real. Columns rise and fall at odd intervals, as though trying to make up their minds. The air carries a sharp metallic tang, like cut roses and old brass.||go west=croquet ground,go north=safe room
+throne room|A vaulted hall soaked in crimson and gold. Tapestries hang where there are no walls, and the ceiling floats slightly too high to be real. Columns rise and fall at odd intervals, as though trying to make up their minds. The air carries a sharp metallic tang, like cut roses and old brass.||go west=chess room,go north=safe room
 
 chest room|A giant wooden chest framed by stone that seems to be breathing. Its surface is carved with symbols that don’t stay still, and the golden keyhole pulses faintly, as if listening. The ground before it is worn smooth, though nothing passes through.||go south=mushroom
 
