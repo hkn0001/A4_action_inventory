@@ -37,16 +37,15 @@ void control::process_command(const std::string& input) {
         return;
     }
 
-    if (room_manager->current_room != previous_room) {
-        room_manager->print_room_state(true);
-    }
-
     if (cleaned_input == "quit") {
         game_manager->is_running = false;
         std::cout << "Goodbye.\n";
         return;
     }
 
+    if (room_manager->current_room != previous_room) {
+        room_manager->print_room_state(true);
+    }
 
 if (cleaned_input == "inventory" || cleaned_input == "i" || cleaned_input == "invent") {
     const auto& inv = player_data->get_inventory();

@@ -4,7 +4,7 @@ red flower|A flower that is an unnaturally bright red.|meadow|0|0||flower,crimso
 
 queen's card|The queen of hearts' playing card. it is, coincidentally, a queen of hearts card.||0|0||card,playing card,queen card
 
-teacup|A floating teacup that makes you feel smaller when drunk.|tea party|0|20|small|cup,tea
+tea cup|A floating teacup that makes you feel smaller when drunk.||0|20|small|cup,tea,teacup
 
 shrinking cake|A striped cake with the label "EAT ME" on it.|hallway|0|25|small|cake,eatme,striped cake
 
@@ -18,9 +18,9 @@ bloody card|A sharp throwing card stiff with old blood.|croquet ground|5|0||thro
 
 mad hatter's hat|An immaculate top hat.||0|0||ink,liquid,black stuff
 
-cat flesh|disgusting, but probably necessary.||0|5||cheshire flesh,cat flesh, flesh
+cat flesh|cat flesh. disgusting, but probably necessary.||0|5||cheshire flesh,cat flesh, flesh
 
-rabbit sandwitch|rabbit sandwitch; the white rabbit's last tasty legacy.|rabbit burrow|3|3||sandwitch
+rabbit sandwitch|rabbit sandwitch; the white rabbit's final tasty legacy.||3|3||sandwitch
 
 chess jerky|magical jerky made from chess piece meat.|chess board|0|20||key,shiny key,glass
 

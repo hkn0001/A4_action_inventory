@@ -195,12 +195,24 @@ void action::talk(const std::string& raw_input) {
     }
     std::cout << target_id << " says: " << npc.get_greeting() << "\n";
     std::string gift = npc.get_gift();
-    if (gift != "" && item_manager->all_items.count(gift)) {
-        player_data->add_item(gift);
+if (gift != "" && item_manager->all_items.count(gift)) {
+    // try to add to inventory...
+    player_data->add_item(gift);
+
+    if (!player_data->has_item(gift)) {
+        room_manager->items_in_rooms[ room_manager->current_room ].push_back(gift);
+        std::cout
+          << target_id
+          << " tries to give you a "
+          << gift
+          << ", but your inventory is full. It falls to the ground.\n";
+    } else {
         std::cout << target_id << " gives you a " << gift << ".\n";
-        npc.clear_gift();
-        room_chars.erase(it);
     }
+
+    npc.clear_gift();
+    room_chars.erase(it);
+}
 }
 
 void action::throw_item(const std::string& raw) {

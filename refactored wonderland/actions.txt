@@ -1,7 +1,7 @@
-attack|a,attack!,strike
+attack|a,attack!,strike,hit,punch,kill
 take|grab,pick,pick up
 drop|leave
-use|consume,eat
+use|consume,eat,drink
 store|stash
 retrieve|get,take from chest
 talk|speak,chat

@@ -1,7 +1,7 @@
 # main_character_id|alias1,alias2,alias3
 
 cheshire cat|cat,cheshire
-mad hatter|rabbit,mad rabbit,hatter,mad
+mad hatter|hatter,mad
 white rabbit|white,rabbit,white_rabbit
 caterpillar|caterpilar
 queen of hearts|queen_of_hearts,queen,heart queen
