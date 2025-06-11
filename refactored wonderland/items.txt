@@ -1,10 +1,10 @@
-smoking pipe|A curious pipe left behind by a vanished caterpillar.|mushroom|0|0|small|pipe,smoke
+smoking pipe|A curious pipe left behind by a vanished caterpillar.||0|0|small|pipe,smoke
 
 red flower|A flower that is an unnaturally bright red.|meadow|0|0||flower,crimson flower
 
 queen's card|The queen of hearts' playing card. it is, coincidentally, a queen of hearts card.||0|0||card,playing card
 
-teacup|A floating teacup that makes you feel smaller when drunk.|tea party|20|0|small|cup,tea
+teacup|A floating teacup that makes you feel smaller when drunk.|tea party|0|20|small|cup,tea
 
 shrinking cake|A striped cake with the label "EAT ME" on it.|hallway|0|25|small|cake,eatme,striped cake
 
@@ -12,18 +12,18 @@ enlargement mushroom|A piece of peculiar mushroom, half red and half blue.|mushr
 
 pocket watch|A golden pocket watch ticking erratically.||0|0||watch,clock,timepiece
 
-rose dagger|A thorny rose twisted into a deadly throwing blade.|meadow|15|0||rose,thorn,blade,dagger
+bloody scepter fragment|A fragment of a thorny rose that has been hardened over centuries.|meadow|15|0||rose,thorn,scepter,fragment,scepter fragment
 
 bloody card|A sharp, bloodstained playing card stiff with old blood.|croquet ground|5|0||throwing card
 
-mad hatter's hat|An immaculate top hat.|tea party|0|10||ink,liquid,black stuff
+mad hatter's hat|An immaculate top hat.||0|0||ink,liquid,black stuff
 
-cat meat|disgusting, but probably necessary.|meadow|0|5||bell,giggle
+cat flesh|disgusting, but probably necessary.||0|5||cheshire flesh,cat flesh, flesh
 
-rabbit sandwitch|rabbit sandwitch; the white rabbit's last tasty legacy.|rabbit burrow|3|3||fork,silverware
+rabbit sandwitch|rabbit sandwitch; the white rabbit's last tasty legacy.|rabbit burrow|3|3||sandwitch
 
-chess jerky|magical jerky made from chess piece meat.|croquet ground|0|0||key,shiny key,glass
+chess jerky|magical jerky made from chess piece meat.|chess board|0|20||key,shiny key,glass
 
-mystery meat|a piece of meat of unkown origin.|hallway|0|20||tears,bottle
+mystery meat|a piece of meat of unkown origin.|hallway|0|20||meat,mystery,unkown meat
 
-edible grass|a magical herb from the vast meadow.|meadow|1|0||pawn,chess
+edible grass|a magical herb from the vast meadow.|meadow|0|10||pawn,chess

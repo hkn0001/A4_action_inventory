@@ -106,7 +106,7 @@ if (!next_room.empty()) {
 
     if (room_manager->current_room == "safe room") {
         bool has_all = true;
-        for (const auto& treasure : required_treasures) {
+        for (const auto& treasure : game_manager->required_treasures) {
             if (!player_data->has_item(treasure)) {
                 has_all = false;
                 break;

@@ -395,6 +395,7 @@ std::string game::resolve_character_id(const std::string& user_input) {
 }
 
 void game::load_required_treasures(const std::string& filename) {
+    required_treasures.clear();
     std::ifstream file(filename);
     if (!file) {
         std::cerr << "Could not open required_treasures.txt\n";
@@ -404,7 +405,6 @@ void game::load_required_treasures(const std::string& filename) {
 
     std::string line;
     while (std::getline(file, line)) {
-        line.erase(std::remove_if(line.begin(), line.end(), ::isspace), line.end());
         if (!line.empty()) {
             required_treasures.push_back(line);
         }

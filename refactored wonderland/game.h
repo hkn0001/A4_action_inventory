@@ -16,9 +16,9 @@ class action;
 
 class game {
 private: 
-    std::vector<std::string> required_treasures = {"crown", "scepter", "cloak"};
     void handle_combat(character& enemy, const std::string& enemy_id, int damage_dealt);
 public:
+    std::vector<std::string> required_treasures;
     player* player_data;
    room* room_manager; 
    control* control_manager;

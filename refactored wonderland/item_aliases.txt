@@ -2,28 +2,26 @@
 
 red flower|flower,crimson flower
 
-queen's card|card,playing card
+queen's card|card,playing card,queens card
 
 teacup|cup,tea
 
-shrinking cake|cake,eatme,striped cake
+shrinking cake|cake,eat me,striped cake
 
 enlargement mushroom|shroom,mushroom
 
 pocket watch|watch,clock,timepiece
 
-rose dagger|rose,thorn,blade,dagger
+bloody scepter fragment|bloody scepter,scepter,bloody,fragment,scepter fragment,bloody fragment
 
-bloody card|throwing card,bloody
+mad hatter's hat|hat,mad hat,mad hatter's,mad hatters, mad hatters hat
 
-mad hatter's hat|hat,mad hat,mad hatter's
-
-cat meat|kitten meat,cheshire meat,
+cat flesh|flesh,cheshire flesh,cat flesh
 
 rabbit sandwitch|rabbit meat,rabbit food,sandwitch
 
-chess jerky|chess,chess meat
+chess jerky|chess,chess meat, jerky
 
-mystery meat|meat,beef,mystery
+mystery meat|meat,mystery,unkown meat
 
-edible grass|grass,greenery,herb
+edible grass|grass,greenery,herb,magical herb,meadow grass

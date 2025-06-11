@@ -2,8 +2,8 @@
 
 cheshire cat|cat,cheshire
 mad hatter|rabbit,mad rabbit,hatter,mad
-white rabbit|white,rabbit
+white rabbit|white,rabbit,white_rabbit
 caterpillar|caterpilar
 queen of hearts|queen_of_hearts,queen,heart queen
-dormouse|mouse,rat 
+dormouse|mouse,rat,dormous
 jabberwock|jabberwocky

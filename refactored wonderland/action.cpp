@@ -29,9 +29,15 @@ void action::take(const std::string& raw) {
     auto& items_here = room_manager->items_in_rooms[room_manager->current_room];
     auto it = std::find(items_here.begin(), items_here.end(), item_id);
     if (it != items_here.end()) {
+        // Try to add to inventory first
+        size_t prev_inv_size = player_data->get_inventory().size();
         player_data->add_item(item_id);
-        items_here.erase(it);
-        std::cout << "You picked up the " << item_id << ".\n";
+        if (player_data->get_inventory().size() > prev_inv_size) {
+            // Actually picked up
+            items_here.erase(it);
+            std::cout << "You picked up the " << item_id << ".\n";
+        } 
+        // If not added, add_item prints error message; do NOT remove from room or print anything else.
     } else {
         std::cout << "There is no " << item_id << " here.\n";
     }
