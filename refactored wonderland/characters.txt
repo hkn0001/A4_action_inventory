@@ -1,6 +1,6 @@
 # id|description|location|health|damage|drops|aliases|peaceful|greeting|gift
 cheshire cat|A smiling cat that vanishes.|meadow|20|5|cat flesh|cat,cheshire
-mad hatter|He looks slightly mad.|tea party|12|8|teacup
+mad hatter|He looks slightly mad.|tea party|12|8|mad hatter's hat
 white rabbit|A nervous rabbit glancing at a pocket watch.|rabbit burrow|15|0|pocket watch
 caterpillar|A blue caterpillar perched on a mushroom, blowing smoke rings.|mushroom|20|0|smoking pipe|blue caterpillar|1|hello, little friend. would you fancy a smoke? I am afraid I can't help you smoke it, as I am already late to the queen's croquet party. Farewell!|smoking pipe
 queen of hearts|The furious Queen shouts 'off with their heads!'.|throne room|40|12|queen's card

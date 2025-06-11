@@ -2,7 +2,7 @@ smoking pipe|A curious pipe left behind by a vanished caterpillar.||0|0|small|pi
 
 red flower|A flower that is an unnaturally bright red.|meadow|0|0||flower,crimson flower
 
-queen's card|The queen of hearts' playing card. it is, coincidentally, a queen of hearts card.||0|0||card,playing card
+queen's card|The queen of hearts' playing card. it is, coincidentally, a queen of hearts card.||0|0||card,playing card,queen card
 
 teacup|A floating teacup that makes you feel smaller when drunk.|tea party|0|20|small|cup,tea
 
@@ -14,7 +14,7 @@ pocket watch|A golden pocket watch ticking erratically.||0|0||watch,clock,timepi
 
 bloody scepter fragment|A fragment of a thorny rose that has been hardened over centuries.|meadow|15|0||rose,thorn,scepter,fragment,scepter fragment
 
-bloody card|A sharp, bloodstained playing card stiff with old blood.|croquet ground|5|0||throwing card
+bloody card|A sharp throwing card stiff with old blood.|croquet ground|5|0||throwing card,bloody
 
 mad hatter's hat|An immaculate top hat.||0|0||ink,liquid,black stuff
 
